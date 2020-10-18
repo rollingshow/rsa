@@ -84,10 +84,15 @@ if __name__== "__main__":
     print("d =", d) 
     public_key = (get[2], n)
     private_key = (d, n)
+    print(get[0], get[1])
+    print("public key = ", public_key)
+    print("private key = ", private_key)
     message = input("Enter message:")
     result=rsa_encrypt(message, public_key)
     print(result)
     print(rsa_decrypt(result, private_key))
+   
+    
 
 
         
